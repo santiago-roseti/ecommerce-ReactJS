@@ -1,4 +1,15 @@
-import logo from './logo.svg';
+import React from "react";
+import Navbar from "./Components/Navbar/navbar"
+const App = () =>{
+  return (
+    
+    <Navbar />
+    
+  )
+}
+
+export default App
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */
