@@ -1,14 +1,22 @@
 import React from "react";
-import Navbar from "./Components/Navbar/navbar"
+import Navbar from "./Components/Navbar/navbar";
+import Slogan from "./Components/ItemListContainer";
+
 const App = () =>{
   return (
-    
+    <>
     <Navbar />
-    
+    <main>
+    <Slogan />
+    </main>
+    </>
   )
 }
-
 export default App
+
+
+
+
 /* import logo from './logo.svg';
 import './App.css';
 
