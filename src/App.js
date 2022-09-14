@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "./Components/Navbar/navbar";
 import Slogan from "./Components/ItemListContainer";
+import ItemCount from "./Components/ItemCount";
+const App = () => {
+  const onAdd = () => {
+    console.log("agregaste al carrito")
+  }
+  onAdd()
 
-const App = () =>{
   return (
     <>
     <Navbar />
     <main>
     <Slogan />
+    <ItemCount stock = {10} onAdd = {onAdd}/>
     </main>
     </>
   )
