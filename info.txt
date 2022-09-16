@@ -1,0 +1,43 @@
+Clase de consumir APIS
+Fetch - XHR
+
+Http ==> Formato
+
+Cliente - Servidor
+Request - Response
+Maquina A - MAquina B
+
+Request Cliente:
+ -URL
+ -Metodos = 
+            Get ==> Obtener informacion (Consulta a API que tiene productos)
+            Post ==> Cargar informacion, enviarla al backend y a una base de datos
+            Delete ==> Borrar (Delete de usuario para que no genere spam)
+            Put ==> Se utuliza para hacer modificaciones (Modificar un usuario)
+            Patch ==> Permite reemplazar datos (Modificar datos de un usuario)
+ -Headers ==> Maneja informacion configurada
+ -Body ==> Maneja informacion cruda
+ -Version
+
+Server:
+ -Version
+ -Status/Codigos ==> 200-201-204-302-304-401-404-500/505
+ -Headers
+ -Body
+
+AJAX: Async JS and XML
+
+XHR (viejo) - Fetch ==>(con JS) es una funcion que devuelve una promesa
+(PROMESA: Devuelve un then si es positiva, catch si es negativa)
+
+//EJEMPLO REAL DE FETCH MAS AVANZADO
+fetch(url,{
+    method: "POST",
+    headers: {
+        "Content-Type":"application.json"
+    },
+    body: JSON.stringify({
+        name:"juan"
+    })
+})
+.then().catch()
