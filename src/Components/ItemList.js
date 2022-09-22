@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react"
 import { films } from "../assets/films"
-import { customFetch } from "./customFetch"
+import Item from "./Item"
 
-const [listFilms, setListFilms] = useState([])
-useEffect(() => {
-    customFetch(films)
-    .then(res => setListFilms(res))
-}, [])
-
+const ItemList = (listFilms) => {
 console.log(listFilms)
+return(
+    <>
+    id={films.id}
+    {listFilms.map((prod, i) => <Item key={`${prod.name}-${i}`} films = {prod}/>)}
+    </>
+)
+}
+
+export { ItemList }

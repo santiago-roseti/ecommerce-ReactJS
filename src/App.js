@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Components/Navbar/navbar";
-import Slogan from "./Components/ItemListContainer";
+import { Slogan } from "./Components/ItemListContainer";
 import ItemCount from "./Components/ItemCount";
+import { ItemList } from "./Components/ItemList"
 const App = () => {
   const onAdd = () => {
     console.log("agregaste al carrito")
@@ -14,6 +15,7 @@ const App = () => {
     <main>
     <Slogan />
     <ItemCount stock = {10} onAdd = {onAdd}/>
+    <ItemList />
     </main>
     </>
   )

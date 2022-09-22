@@ -5,7 +5,7 @@ const suma = () => {
     stock > contador && setContador(contador + 1) ; console.log("+1");
 }
 const resta = () => {
-    contador != 1 && setContador(contador - 1) ; console.log("-1")
+    contador !== 1 && setContador(contador - 1) ; console.log("-1")
 }
 const agregarCarrito = () => {
     setContador(contador);

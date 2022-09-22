@@ -1,14 +1,16 @@
 import React from "react"
+import { films } from "../assets/films";
 
-const Items = () =>{
+const Item = ({film}) =>{
+    console.log(film)
     return(
         <>
-        <img src={(g)}></img>
-        <h3>{film.name}</h3>
-        <p>{film.description}</p>
-        <h6>${film.price}</h6>
+        
+        <h3>{films.name}</h3>
+        <p>{films.description}</p>
+        <h6>${films.price}</h6>
         <button>Ver más</button>
         </>
     )
 }
-export default Items;
+export default Item;

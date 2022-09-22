@@ -1,7 +1,7 @@
 import React from "react"
-import Logo from "../imagenes/logo-cine.jpg"
+import Logo from "../../assets/imagenes/logo-cine.jpg"
 import CartWidget from "../CartWidget"
-import { grey } from "@mui/material/colors"
+
 const Navbar = () => {
     return (
     <header style={styles.container}> 
