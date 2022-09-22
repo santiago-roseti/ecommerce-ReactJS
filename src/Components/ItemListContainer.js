@@ -4,14 +4,12 @@ import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
 
 export const ItemListContainer = () => {
-    const [listFilms, setListFilms] = useState([])
-    
+    const [listFilms, setListFilms] = useState([]);
     useEffect(() => {
         customFetch(films)
         .then(resolve => setListFilms(resolve))
         
     }, [])
-    
     console.log(listFilms);
     
     

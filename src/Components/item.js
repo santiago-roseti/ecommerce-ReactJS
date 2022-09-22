@@ -1,11 +1,10 @@
 import React from "react"
-import { films } from "../assets/films";
 
-const Item = ({film}) =>{
-    console.log(film)
+const Item = ({ films }) =>{
+    console.log(films)
     return(
         <>
-        
+        {/* <img src={require(`../assets/imagenes/${films.image}`)}/> */}
         <h3>{films.name}</h3>
         <p>{films.description}</p>
         <h6>${films.price}</h6>
