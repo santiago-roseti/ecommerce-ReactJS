@@ -2,12 +2,17 @@ import { films } from "../assets/films"
 import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
+import { Spinner } from '@chakra-ui/react'
 
 export const ItemListContainer = () => {
     const [listFilms, setListFilms] = useState([]);
+    const [loading, setLoading] = useState(true)
     useEffect(() => {
         customFetch(films)
-        .then(resolve => setListFilms(resolve))
+        .then(res => {
+            setLoading(false)
+            setListFilms(res)
+        })
         
     }, [])
     console.log(listFilms);
@@ -15,7 +20,10 @@ export const ItemListContainer = () => {
     
     return(
         <>
-        <ItemList listFilms = {listFilms}/>
+        {loading ?
+        <Spinner />
+        :
+        <ItemList listFilms = {listFilms}/>}
         </>
     )}
 
