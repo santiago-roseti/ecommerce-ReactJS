@@ -1,7 +1,7 @@
 import { films } from "../assets/films"
 import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
-import { ItemDetail } from "./ItemDetail"
+import  ItemDetail  from "./ItemDetail"
 import { Spinner } from '@chakra-ui/react'
 
 export const ItemDetailContainer = () => {
@@ -32,7 +32,7 @@ export const ItemDetailContainer = () => {
         {loading ?
         <Spinner />
         :
-        <ItemDetail Item={films}/>}
+        <ItemDetail Item={Films}/>}
         </>
     )}
 

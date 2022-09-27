@@ -16,7 +16,7 @@ const App = () => {
     <Slogan />
     <ItemCount stock = {10} onAdd = {onAdd}/>
     <ItemListContainer />
-    {<ItemDetailContainer />}
+    {/* <ItemDetailContainer /> */}
     </main>
     </>
   )
