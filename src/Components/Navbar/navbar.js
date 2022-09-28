@@ -1,6 +1,7 @@
 import React from "react"
 import Logo from "../../assets/imagenes/logo-cine.jpg"
-import CartWidget from "../CartWidget"
+import CartWidget from "../CartWiew/CartWidget"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -8,13 +9,12 @@ const Navbar = () => {
         <img style={styles.imagen} src={Logo} alt="Logo de mi página"></img>
         <h1 style={styles.title}>TopCinema</h1>
         <nav>
-            <a style={styles.links} href="#">Inicio</a>
-            <a style={styles.links} href="#">Catálogo</a>
-            <a style={styles.links} href="#">Promociones</a>
-            <a style={styles.links} href="#">Combos</a>
-            <a style={styles.links} href="#">Nosotros</a>
+            <Link style={styles.links} to="/">Inicio</Link>
+            <Link style={styles.links} to="/category/Catálogo">Catálogo</Link>
+            <Link style={styles.links} to="/category/Combos">Combos</Link>
+            <Link style={styles.links} to="/category/Nosotros">Nosotros</Link>
         </nav>
-        <CartWidget style={styles.cart} />
+            <Link to="/cart"><CartWidget style={styles.cart} /></Link>
     </header>
     )
 }

@@ -3,12 +3,15 @@ import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
 import  ItemDetail  from "./ItemDetail"
 import { Spinner } from '@chakra-ui/react'
+import { useParams } from "react-router-dom"
 
 export const ItemDetailContainer = () => {
     const [Films, setFilms] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     
+    let {id} = useParams();
+
     useEffect(() => {
     const getItem = async () =>{
         try {

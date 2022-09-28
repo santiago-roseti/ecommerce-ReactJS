@@ -3,8 +3,12 @@ import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
 import { Spinner } from '@chakra-ui/react'
+import { useParams } from "react-router-dom"
 
 export const ItemListContainer = () => {
+
+    let { idCategory } = useParams();
+
     const [listFilms, setListFilms] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {

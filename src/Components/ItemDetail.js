@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "react-router-dom"
 const ItemDetail = ({Item}) => {
     return(
         <>
@@ -7,6 +7,8 @@ const ItemDetail = ({Item}) => {
         <img src={Item.image} w="200px"/>
         <p>{Item.description}</p>
         <h6>${Item.price}</h6>
+        <Link to={`/category/Catálogo`}><button>Volver</button></Link>
+
     </>
     )}
 
