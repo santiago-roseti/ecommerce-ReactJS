@@ -7,35 +7,41 @@ import { useParams } from "react-router-dom"
 
 export const ItemDetailContainer = () => {
     const [Films, setFilms] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState([true]);
     
-    let {id} = useParams();
+    const { DetalleId } = useParams();
+    console.log(DetalleId);
 
     useEffect(() => {
-    const getItem = async () =>{
+        customFetch (films)
+        .then (res =>{
+            setFilms(res[parseInt(DetalleId)])
+        })
+        setLoading(false)
+   /*  const getItem = async () =>{
         try {
             setLoading(true)
             let res = await customFetch(films)
-            setFilms(res[0]);
+            setFilms(res[{}]);
         }
         catch(err){
-            console.error("Ocurrió un error", err)
+            console.error("Ocurrió un error", error)
             setError(true);
         }
         finally {
             setLoading(false)
         }
-    };
-    getItem();  
-    }, [])
-  
+        getItem();   
+    }; 
+     []) */
+}, [DetalleId]);
     return(
         <>
         {loading ?
         <Spinner />
         :
-        <ItemDetail Item={Films}/>}
+        <ItemDetail Item={Films}/>
+        }
         </>
     )}
 

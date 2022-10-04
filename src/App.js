@@ -18,10 +18,10 @@ const App = () => {
     <Routes>
       <Route path="/"/>
       <Route path="/category/:idCategory" element={<ItemListContainer />}/>
-      <Route path="/detalle/films/:id" /* element={<ItemDetailContainer />} *//>
+      <Route path="/detalle/:DetalleId" element={<ItemDetailContainer />}/>
       <Route path="/cart" element={<Cart />}/>
     </Routes>
-    <ItemDetailContainer />
+    {/* <ItemDetailContainer /> */}
     </BrowserRouter>
     </>
   );
