@@ -4,6 +4,7 @@ import { ItemListContainer, Slogan } from "./Components/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer"
 import { Cart }  from "./Components/CartWiew/Cart"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { CartContextProvider } from "./context/CartContext"
 const App = () => {
   const onAdd = () => {
     console.log("agregaste al carrito")
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <>
+    <CartContextProvider>
     <BrowserRouter>
     <Navbar />
     <Slogan />
@@ -21,8 +23,8 @@ const App = () => {
       <Route path="/detalle/:DetalleId" element={<ItemDetailContainer />}/>
       <Route path="/cart" element={<Cart />}/>
     </Routes>
-    {/* <ItemDetailContainer /> */}
     </BrowserRouter>
+    </CartContextProvider>
     </>
   );
 }
