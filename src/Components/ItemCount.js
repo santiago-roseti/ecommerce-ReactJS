@@ -17,7 +17,7 @@ return(
     <h1>{contador}</h1>
     <button onClick={suma}>+</button>
     <button onClick={resta}>-</button>
-    <button onClick={agregarCarrito}>Agregar al carrito</button>
+    <button onClick={() => agregarCarrito(contador)}>Agregar al carrito</button>
     </>
 )
 }
