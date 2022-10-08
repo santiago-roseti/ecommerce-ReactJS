@@ -1,10 +1,10 @@
 import Item from "./Item/Item"
 
-const ItemList = ({listFilms}) => {
-console.log(listFilms)
+const ItemList = ({listProducts}) => {
+console.log(listProducts)
 return(
     <>
-    {listFilms?.map((prod, i) => <Item key={`${prod.name}-${i}`} films = {prod}/>)}
+    {listProducts?.map((prod, i) => <Item key={`${prod.name}-${i}`} products = {prod}/>)}
     </>
 )
 }

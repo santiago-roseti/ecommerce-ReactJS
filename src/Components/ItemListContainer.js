@@ -1,4 +1,4 @@
-import { films } from "../assets/films"
+import { products } from "../assets/products"
 import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
@@ -9,17 +9,17 @@ export const ItemListContainer = () => {
 
     let { idCategory } = useParams();
 
-    const [listFilms, setListFilms] = useState([]);
+    const [listProducts, setListProducts] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        customFetch(films)
+        customFetch(products)
         .then(res => {
             setLoading(false)
-            setListFilms(res)
+            setListProducts(res)
         })
         
     }, [])
-    console.log(listFilms);
+    console.log(listProducts);
     
     
     return(
@@ -27,7 +27,7 @@ export const ItemListContainer = () => {
         {loading ?
         <Spinner />
         :
-        <ItemList listFilms = {listFilms}/>}
+        <ItemList listProducts = {listProducts}/>}
         </>
     )}
 

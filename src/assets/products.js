@@ -1,4 +1,4 @@
-export const films = [
+export const products = [
     {id: 1,
     name: "Fast and Furious 9",
     image: "https://play-lh.googleusercontent.com/7nAg30A2llENkSL3AUYsywjlRIQYKiEMawudqI9FScuirlGRYeupJF45Rgycr0mEttige_6pFf6ALZelAJk",
