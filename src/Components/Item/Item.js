@@ -2,8 +2,8 @@ import React from "react"
 import { Button } from "@mui/material"
 import "./Item.css"
 import { Link } from "react-router-dom"
-import { Cards } from "bootstrap"
-const Item = ({ products }) =>{
+
+ const Item = ({ products }) =>{
     console.log(products)
     return(
         <>
@@ -15,5 +15,6 @@ const Item = ({ products }) =>{
         </div>
         </>
     )
-}
+    }
 export default Item;
+
