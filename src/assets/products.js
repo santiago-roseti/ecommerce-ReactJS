@@ -1,131 +1,131 @@
 export const products = [
     {id: 1,
         name: "Justicia implacable",
-        image: "https://i.pinimg.com/originals/09/52/c8/0952c8747b2b51315676709dc1092b88.jpg",
-        description: "desafio promises",
+        image: "https://www.themoviedb.org/t/p/original/4Q9wvngvgzzLcycZvMRo6djpcoX.jpg",
+        description: "Harry es un tipo enigmático que empieza a trabajar como guarda de camiones blindados. En un intento de asalto, Harry sorprende a sus compañeros con sus habilidades para el combate y, poco a poco, empiezan a comprender el verdadero motivo que lo ha llevado a trabajar allí.",
         category: "peliculas",
-        price: "500",
-        stock: "50"
+        price: 650,
+        stock: 100
     },
     {id: 2,
-        name: "Rascacielos",
-        image: "https://pics.filmaffinity.com/Justicia_implacable-149117057-large.jpg",
-        description: "desafio promises",
+        name: "Rascacielos: Rescate en las alturas",
+        image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQw02ecOuaHU0zRCz3LJcSO5jAj8-W_96FYD27UPqfVxQPLLjS3",
+        description: "Will Sawyer es un exagente del FBI y veterano de guerra de EE. UU. que evalúa la seguridad de los rascacielos. En una misión en Hong Kong, es acusado de provocar un incendio en el edificio más alto y seguro del mundo, The Pearl. Él debe encontrar a los responsables, limpiar su nombre y rescatar a su familia, que está atrapada dentro del edificio en llamas.",
         category: "peliculas",
-        price: "500",
-        stock: "50"
+        price:560,
+        stock: 100
     },
     {id: 3,
         name: "Parker",
-        image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
-        description: "desafio promises",
+        image: "https://es.web.img3.acsta.net/medias/nmedia/18/94/03/42/20444437.jpg",
+        description: "Un ladrón es traicionado por su propia banda, quienes lo abandonan a su suerte y lo dan por muerto. Si embargo, sobrevive y, con la ayuda de una infiltrada y una identidad falsa, promete vengarse y apropiarse del botín que robaron sus viejos camaradas.",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
     },
     {id: 4,
         name: "Moribus",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 5,
         name: "Top gun: Maverick",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 6,
         name: "Jurassic World: Dominion",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 7,
         name: "El agente invisible",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 8,
         name: "Scream 5",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 9,
         name: "La abuela",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 10,
         name: "Invitación al infierno",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 11,
         name: "Sonríe",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 12,
         name: "La huérfana",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 13,
         name: "Shang-Chi y la leyenda de los Diez Anillos",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 14,
         name: "Eternals",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
     {id: 15,
         name: "Doctor Strange en el Multiverso de la Locura",
         image: "https://mx.web.img2.acsta.net/c_310_420/pictures/20/03/04/23/48/3618241.jpg",
         description: "desafio promises",
         category: "peliculas",
-        price: "500",
-        stock: "30"
+        price: 500,
+        stock: 100
         },
 
-    {id: 12,
+    {id: 16,
         name: "Combo mega recargado",
         image: "https://static.cinemarkhoyts.com.ar/Images/ConcessionItemImage/A000003172.png?v=25042022",
         description: "1 Balde pop + 2 gaseosas 24oz + 1 golosina sin eleccion",
         category: "candy",
-        price: "500",
-        stock: "30"
-        },
-]
+        price: 2000,
+        stock: 350
+        }
+];

@@ -12,22 +12,34 @@ export const ItemListContainer = () => {
     const [listProducts, setListProducts] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        customFetch(products)
-        .then(res => {
+        const getProducts = customFetch(products);
+        getProducts.then(res => {
             setLoading(false)
             setListProducts(res)
         })
-        
-    }, [])
+        ;
     console.log(listProducts);
-    
-    
+    /* if (idCategory) {
+    getProducts.then(res => setListProducts(res.filter(peliculas => peliculas.category === idCategory)));
+    }
+     else {
+        getProducts.then(res => {
+            setLoading(false)
+            setListProducts(res)
+        })
+        ; 
+    }*/
+}, [idCategory])
     return(
         <>
+        <div className="container">
+        <div className="row d-flex justify-content-evenly">
         {loading ?
         <Spinner />
         :
         <ItemList listProducts = {listProducts}/>}
+        </div>
+        </div>
         </>
     )}
 
@@ -38,3 +50,8 @@ export const Slogan = () => {
         </>
     )
 }
+ /*   getProducts.then(res => {
+            setLoading(false)
+            setListProducts(res)
+        })
+        ; */
