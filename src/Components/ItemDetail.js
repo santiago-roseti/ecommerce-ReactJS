@@ -25,7 +25,7 @@ const ItemDetail = ({ Item }) => {
             :
             <ItemCount stock = {10} onAdd = {onAdd}/>
         };
-        <Link to={`/category/Catálogo`}><button>Volver</button></Link>
+        <Link to={`/category/Catálogo`}><button>Seguir comprando</button></Link>
     </>
     )}
 

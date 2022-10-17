@@ -1,9 +1,9 @@
-import { products } from "../assets/products"
-import { customFetch } from "../utils/customFetch"
 import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
 import { Spinner } from '@chakra-ui/react'
 import { useParams } from "react-router-dom"
+import { db } from "../firebase/Firebase"
+import { getDocs, collection, query, where } from "firebase/firestore"
 
 export const ItemListContainer = () => {
 
@@ -11,25 +11,25 @@ export const ItemListContainer = () => {
 
     const [listProducts, setListProducts] = useState([]);
     const [loading, setLoading] = useState(true)
+    
     useEffect(() => {
-        const getProducts = customFetch(products);
-        getProducts.then(res => {
-            setLoading(false)
-            setListProducts(res)
+        const productsCollection = collection (db,"products")
+        const q = query(productsCollection, where ("category", "==", "peliculas"))
+        getDocs(q)
+        .then((data)=>{
+            const list = data.docs.map((products)=>{
+                return {
+                    ...products.data(),
+                    id: products.id
+                }
+            })
+            setListProducts(list)
         })
-        ;
-    console.log(listProducts);
-    /* if (idCategory) {
-    getProducts.then(res => setListProducts(res.filter(peliculas => peliculas.category === idCategory)));
-    }
-     else {
-        getProducts.then(res => {
+        .finally(()=>{
             setLoading(false)
-            setListProducts(res)
         })
-        ; 
-    }*/
 }, [idCategory])
+
     return(
         <>
         <div className="container">
@@ -54,4 +54,11 @@ export const Slogan = () => {
             setLoading(false)
             setListProducts(res)
         })
-        ; */
+        ;
+        const getProducts = customFetch(products);
+        getProducts.then(res => {
+            setLoading(false)
+            setListProducts(res)
+        })
+        ;
+    console.log(listProducts); */
