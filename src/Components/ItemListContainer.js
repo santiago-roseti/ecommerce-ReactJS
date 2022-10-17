@@ -15,6 +15,7 @@ export const ItemListContainer = () => {
     useEffect(() => {
         const productsCollection = collection (db,"products")
         const q = query(productsCollection, where ("category", "==", "peliculas"))
+         /* const filterProducts = (idCategory === undefined ? productsCollection : q)*/
         getDocs(q)
         .then((data)=>{
             const list = data.docs.map((products)=>{
