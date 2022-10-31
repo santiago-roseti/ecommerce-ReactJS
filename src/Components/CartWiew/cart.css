@@ -1,0 +1,23 @@
+a{
+    text-decoration: none !important;
+}
+.iconContainer{
+    margin-right: 50px;
+}
+.iconCart{
+    font-size: 2rem !important;
+    color: rgb(202, 202, 202);
+    margin: 0;
+}
+.cantidadProds{
+    color: rgb(202, 202, 202);
+    text-decoration: none !important;
+}
+.link{
+    color: rgb(0, 0, 0);
+    text-decoration: underline !important;
+}
+.link:hover{
+transition: all 1s;
+color: rgb(165, 0, 0);
+}

@@ -21,7 +21,7 @@ const ItemDetail = ({ Item }) => {
         <h6>${Item.price}</h6>
         {
             IrCarrito ?
-            <Link to="/cart">Finalizar Compra</Link>
+            <Link to="/cart">Ir al carrito</Link>
             :
             <ItemCount stock = {10} onAdd = {onAdd}/>
         };

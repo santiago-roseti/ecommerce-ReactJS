@@ -4,9 +4,9 @@ const ItemList = ({listProducts}) => {
 console.log(listProducts)
 return(
     <>
-    {listProducts?.map((prod, i) => <Item key={`${prod.name}-${i}`} products = {prod}/>)}
+    {listProducts.map((prod, i) => <Item key={`${prod.name}-${i}`} products = {prod}/>)}
     </>
-)
+);
 }
 
 export { ItemList };

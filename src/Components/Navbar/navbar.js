@@ -12,7 +12,6 @@ const Navbar = () => {
             <Link style={styles.links} to="/">Inicio</Link>
             <Link style={styles.links} to="/category/Catálogo">Catálogo</Link>
             <Link style={styles.links} to="/category/Combos">Combos</Link>
-            <Link style={styles.links} to="/category/Nosotros">Nosotros</Link>
         </nav>
             <Link to="/cart"><CartWidget style={styles.cart} /></Link>
     </header>

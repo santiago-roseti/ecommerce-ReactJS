@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
         </div>
         <h6>${products.price}</h6>
         <div className="card-footer bg-transparent">
-        <Link to={`/detalle/${products.id}`}><Button variant="contained">Ver detalle</Button></Link>
+        <Link to={`/detalle/${products.id}`}><Button colorScheme="red" variant="contained">Ver detalle</Button></Link>
         </div>
         </div>        
         </>

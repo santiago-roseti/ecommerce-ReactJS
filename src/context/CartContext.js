@@ -26,12 +26,12 @@ export function CartContextProvider({ children }) {
         }
     }
 
-    const removeProduct = (id) => setCartList(cartList.filter(prod => prod.id != id))
+    const removeProduct = (id) => setCartList(cartList.filter(prod => prod.id !== id))
 
     const cleanCart = () => setCartList([])
 
     const totalPrice = () => {
-        return cartList.reduce((acc, product) => acc += product.price * product.quantity)
+        return cartList.reduce((acc, product) => acc += (product.price * product.quantity),0)
     }
 
     const totalQuantity = () => {
