@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CartContextProvider } from "./context/CartContext"
 
 const App = () => {
-  const Slogan = "Un lugar, miles de emociones";
+  const Slogan = "Aprovechá las mejores ofertas!";
 
   return (
     <>
@@ -17,8 +17,8 @@ const App = () => {
     <BrowserRouter>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Inicio greeting={Slogan}/>}/>
-      <Route path="/category/:idCategory" element={<ItemListContainer />}/>
+      <Route path="/" element={<Inicio />}/>
+      <Route path="/category/:IdCategory" element={<ItemListContainer greeting={Slogan} />}/>
       <Route path="/detalle/:DetalleId" element={<ItemDetailContainer />}/>
       <Route path="/cart" element={<Cart />}/> 
       <Route path="/form" element={<Form />}/>

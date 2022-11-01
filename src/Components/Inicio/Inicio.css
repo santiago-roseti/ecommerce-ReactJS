@@ -1,0 +1,9 @@
+.frase{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

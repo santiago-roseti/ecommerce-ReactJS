@@ -1,22 +1,22 @@
-import { useState, useEffect } from "react"
 import { ItemList } from "./ItemList"
+import { useState, useEffect } from "react"
 import { CircularProgress } from '@chakra-ui/react'
 import { useParams } from "react-router-dom"
 import { db } from "../firebase/Firebase"
 import { getDocs, collection, query, where } from "firebase/firestore"
+import "./ILC.css"
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({greeting}) => {
 
-    let { idCategory } = useParams();
-
+    const { IdCategory } = useParams();
     const [listProducts, setListProducts] = useState([]);
     const [loading, setLoading] = useState(true)
     
     useEffect(() => {
-        const productsCollection = collection (db,"products")
-        const q = query(productsCollection, where ("category", "==", "peliculas"))
-        /* const filterProducts = (idCategory === undefined ? productsCollection : q)*/
-        getDocs(q)
+        const productsCollection = collection (db,"products");
+        const productsCategory = query(productsCollection, where ("category", "==", `${IdCategory}`));
+        let filterProducts = (IdCategory === undefined ? productsCollection : productsCategory);
+        getDocs(filterProducts)
         .then((data)=>{
             const list = data.docs.map((products)=>{
                 return {
@@ -27,13 +27,14 @@ export const ItemListContainer = () => {
             setListProducts(list)
         })
         .finally(()=>{
-            setLoading(false)
+            setLoading(false);
         })
-}, [idCategory])
+}, [IdCategory]) 
 
     return(
         <>
-        <div className="container">
+        <h1 className="title-slogan">{greeting}</h1>
+        <div className="container-fluid">
         <div className="row d-flex justify-content-evenly">
         {loading ?
                 <div style={{

@@ -8,7 +8,7 @@ const Navbar = () => {
     <header style={styles.container}> 
         <img style={styles.imagen} src={Logo} alt="Logo de mi página"></img>
         <h1 style={styles.title}>TopCinema</h1>
-        <nav>
+        <nav className="navBar">
             <Link style={styles.links} to="/">Inicio</Link>
             <Link style={styles.links} to="/category/Catálogo">Catálogo</Link>
             <Link style={styles.links} to="/category/Combos">Combos</Link>
@@ -24,10 +24,10 @@ const styles = {
         justifyContent: "space-between",
         alignContent: "center",
         paddingTop: "20px",
-        backgroundColor: "#2b2b2b"
+        backgroundColor: "black"
     },
     imagen :{ 
-        width: "75px",
+        width: "100px",
         height: "75px",
         paddingLeft: "20px"
     },
@@ -46,7 +46,6 @@ const styles = {
         marginRight: 20,
         color: "white"
     }
-
 }
 
 export default Navbar

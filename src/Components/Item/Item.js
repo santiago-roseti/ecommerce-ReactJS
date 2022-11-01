@@ -1,8 +1,9 @@
 import React from "react"
 import { Button } from "@mui/material"
 import { Link } from "react-router-dom"
+import "./Item.css"
 
- const Item = ({ products }) =>{
+const Item = ({ products }) =>{
     console.log(products)
     return(
         <><div class="col-md-3 m-3 shadow-lg border-light card text-center align-items-center">
@@ -12,7 +13,7 @@ import { Link } from "react-router-dom"
         </div>
         <h6>${products.price}</h6>
         <div className="card-footer bg-transparent">
-        <Link to={`/detalle/${products.id}`}><Button colorScheme="red" variant="contained">Ver detalle</Button></Link>
+        <Link to={`/detalle/${products.id}`}><Button className="btnDetalle" colorScheme="red" variant="contained">Ver detalle</Button></Link>
         </div>
         </div>        
         </>

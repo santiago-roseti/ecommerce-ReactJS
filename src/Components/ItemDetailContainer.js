@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import  ItemDetail  from "./ItemDetail"
+import  ItemDetail  from "./ItemDetail/ItemDetail"
 import { Spinner } from '@chakra-ui/react'
 import { useParams } from "react-router-dom"
 import { db } from "../firebase/Firebase"
@@ -39,9 +39,3 @@ export const ItemDetailContainer = () => {
     )
 }
     export default ItemDetailContainer;
-    
-    /* customFetch (products)
-        .then (res =>{
-            setListProducts(res[parseInt(DetalleId)])
-            setLoading(false)
-        }) */

@@ -1,0 +1,8 @@
+.title-slogan{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    color: white;
+    background-color: black;
+}

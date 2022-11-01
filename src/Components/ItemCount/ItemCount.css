@@ -1,0 +1,27 @@
+.itemCountContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.itemCountContainer>Button{
+    width: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 37, 37);
+    color: white;
+
+}
+.count{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.carrito{
+    margin-left: 30px;
+    width: 150px !important;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 37, 37);
+    color: white;
+}

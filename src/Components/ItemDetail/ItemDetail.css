@@ -1,0 +1,41 @@
+.CardDetail{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}    
+.titulo{
+    text-align: start;
+}
+.CardDetail>img{
+    padding: 30px;
+    width: 400px;
+    height: 550px;
+}
+.info{
+    max-width: 250px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: justify;
+}
+.seguirComprando{
+    margin-top: 50px;
+    width: 150px !important;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 37, 37);
+    color: white;
+}
+.btnCarrito{
+    width: 150px !important;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(247, 37, 37);
+    color: white;
+}

@@ -1,10 +1,10 @@
 import React from "react";
-
-function Inicio({greeting}) {
+import "./Inicio.css"
+const Inicio = () => {
     return(
-        <>
-        <h1>{greeting}</h1>
-        </>
+    <div>
+        <h1 className="frase">Un lugar, miles de emociones</h1>
+    </div>
     )
 }
 export default Inicio

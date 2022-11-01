@@ -10,12 +10,12 @@ export const Cart  = () => {
     return (
         <>
             {cartList.map(prod =>
-                <HStack key={prod.id} boxShadow="lg" p="6" rounded="md" spacing={30} bg="white">
-                <Image src={prod.image} w="100px"></Image>
+                <HStack className="cartContainer" key={prod.id} p="6" rounded="md" spacing={30}>
+                <Image className="prod-cart-img" src={prod.image}></Image>
                 <Text as="b">{prod.products}</Text>
                 <Text as="b"> Precio: ${prod.price}</Text>
                 <Text as="b"> Cantidad: {prod.quantity}</Text>
-                <Button colorScheme='red' variant='outline' size='sm' onClick={()=> removeProduct(prod.id)}>X</Button>
+                <Button className="removeButton" colorScheme='red' variant='outline' size='sm' onClick={()=> removeProduct(prod.id)}>X</Button>
                 </HStack>
             )}
             {cartList.length === 0 ?
@@ -25,9 +25,11 @@ export const Cart  = () => {
                 </div>
                 :
                 <>
-                <h4>Total: ${totalPrice()}</h4>
-                <Button colorScheme="red" variant="contained" size="sm" onClick={cleanCart}>Vaciar carrito</Button>
-                <Link to = "/form"><Button colorScheme='red' variant="contained" size="sm">Finalizar compra</Button></Link>
+                <h4 className="precio-total">Total: ${totalPrice()}</h4>
+                <div className="btnContainer">
+                <Button className="btnCarrito" colorScheme="red" variant="contained" size="sm" onClick={cleanCart}>Vaciar carrito</Button>
+                <Link to = "/form"><Button className="btnCarrito" colorScheme='red' variant="contained" size="sm">Finalizar compra</Button></Link>
+                </div>
                 </>
             }
         </>
