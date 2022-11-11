@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/navbar";
 import Inicio from "./Components/Inicio/Inicio"
 import { ItemListContainer } from "./Components/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer"
